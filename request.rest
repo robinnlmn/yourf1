@@ -1,0 +1,44 @@
+GET http://localhost:8080/legends
+
+###
+
+GET http://localhost:8080/legends/615ab22fef36cb7160d0b4c8
+
+###
+
+DELETE http://localhost:8080/legends/615ab22fef36cb7160d0b4c8
+Content-Type: application/json
+
+{
+    "password": "yourf1"
+}
+
+###
+
+PATCH http://localhost:8080/drivers/615ab22fef36cb7160d0b4c8
+Content-Type: application/json
+
+{
+    "password": "yourf1",
+    "wdc": 0,
+    "wdcYears": []
+}
+
+###
+
+POST http://localhost:8080/legends
+Content-Type: application/json
+
+{
+    "password": "yourf1",
+    "name": "Michael Schumacher",
+    "country": "Germany",
+    "points": 1566,
+    "podiums": 155,
+    "poles": 68,
+    "wins": 91,
+    "wdc": 7,
+    "wdcYears": [1994, 1995, 2000, 2001, 2002, 2003, 2004],
+    "team": ["Jordan", "Benetton", "Ferrari", "Mercedes"],
+    "current": false
+}
